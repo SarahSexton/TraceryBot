@@ -22,14 +22,6 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
-//=========================================================
-// Bots Dialogs
-//=========================================================
-
-bot.dialog('/', function (session) {
-    session.send("Hello World");
-});
-
 var grammar = tracery.createGrammar({
   'animal': ['panda','fox','capybara','iguana'],
   'emotion': ['sad','happy','angry','jealous'],
@@ -39,3 +31,12 @@ var grammar = tracery.createGrammar({
 grammar.addModifiers(tracery.baseEngModifiers); 
 
 console.log(grammar.flatten('#origin#'));
+
+//=========================================================
+// Bots Dialogs
+//=========================================================
+
+bot.dialog('/', function (session) {
+    session.send(grammar.flatten('#origin#'));
+});
+
