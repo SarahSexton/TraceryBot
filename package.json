@@ -1,0 +1,31 @@
+{
+  "name": "tracerybot",
+  "version": "1.0.0",
+  "description": "Build a bot in Node.js on Microsoft Bot Framework using Tracery.",
+  "main": "app.js",
+  "dependencies": {
+    "botbuilder": "^3.3.0",
+    "express": "^4.14.0",
+    "https": "^1.0.0",
+    "restify": "^4.1.1",
+    "tracery-grammar": "^2.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahSexton/TraceryBot.git"
+  },
+  "keywords": [
+    "bot",
+    "javascript"
+  ],
+  "author": "Sarah Sexton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarahSexton/TraceryBot/issues"
+  },
+  "homepage": "https://github.com/SarahSexton/TraceryBot#readme"
+}
