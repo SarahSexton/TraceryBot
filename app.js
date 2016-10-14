@@ -27,10 +27,10 @@ server.post('/api/messages', connector.listen());
 //=========================================================
 var grammar = tracery.createGrammar({
   'adjective': ['agile','robust','iterative','corporate','collaborative','overall','holistic','disruptive','win-win'],
-  'adverb': ['organically','completely','efficiently','quickly','dramatically','professionally','dynamically'],
-  'noun': ['growth strategies','capital','intellectual capital','portals','methodologies','technology'],
-  'preposition': ['via','with','from','on','along','for','of','at','toward','in','inside of','without','after','vis-a-vis','through','within'],
-  'verb': ['administrate','empower','network with','predominate','engage','envision'],
+  'adverb': ['organically','completely','efficiently','dramatically','professionally','dynamically'],
+  'noun': ['growth strategies','scenarios','intellectual capital','frameworks','methodologies','technologies'],
+  'preposition': ['via','with','from','on','along','for','of','toward','in','inside of','without','after','vis-a-vis','through','within'],
+  'verb': ['administrate','empower','network with','engage','envision','dominate'],
   'origin':['#adverb.capitalize# #verb# #adjective# #noun# #preposition# #adjective# #noun#.'],
 });
 
