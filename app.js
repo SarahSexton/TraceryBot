@@ -22,10 +22,16 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
+//=========================================================
+// Tracery Grammar // I am #emotion.a# #animal#.
+//=========================================================
 var grammar = tracery.createGrammar({
-  'animal': ['panda','fox','capybara','iguana'],
-  'emotion': ['sad','happy','angry','jealous'],
-  'origin':['I am #emotion.a# #animal#.'],
+  'adjective': ['agile','robust','iterative','corporate','collaborative','overall','holistic','disruptive','win-win'],
+  'adverb': ['organically','completely','efficiently','quickly','dramatically','professionally','dynamically'],
+  'noun': ['growth strategies','capital','intellectual capital','portals','methodologies','technology'],
+  'preposition': ['via','with','from','on','along','for','of','at','toward','in','inside of','without','after','vis-a-vis','through','within'],
+  'verb': ['administrate','empower','network with','predominate','engage','envision'],
+  'origin':['#adverb.capitalize# #verb# #adjective# #noun# #preposition# #adjective# #noun#.'],
 });
 
 grammar.addModifiers(tracery.baseEngModifiers); 
