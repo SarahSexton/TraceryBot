@@ -23,8 +23,9 @@ server.get('/', restify.serveStatic({
 //Generate your appId and appPassword by registering a bot: dev.botframework.com 
 var connector = new builder.ChatConnector({
     appId: process.env.MY_APP_ID,
-    appPassword: process.env.MY_APP_PASSWORD
+        appPassword: process.env.MY_APP_PASSWORD
 });
+console.log(process.env.MY_APP_ID);
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 

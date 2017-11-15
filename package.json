@@ -4,6 +4,7 @@
   "description": "Build a bot in Node.js on Microsoft Bot Framework using Tracery.",
   "main": "app.js",
   "dependencies": {
+    "assert-plus": "^1.0.0",
     "botbuilder": "^3.11.0",
     "botbuilder-teams": "^0.1.6",
     "express": "^4.16.2",
