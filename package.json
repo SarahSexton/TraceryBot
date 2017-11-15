@@ -1,6 +1,6 @@
 {
   "name": "tracerybot",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Build a bot in Node.js on Microsoft Bot Framework using Tracery.",
   "main": "app.js",
   "dependencies": {
