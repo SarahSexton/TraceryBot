@@ -10,7 +10,8 @@
     "express": "^4.16.2",
     "https": "^1.0.0",
     "restify": "^4.3.1",
-    "tracery-grammar": "^2.7.3"
+    "tracery-grammar": "^2.7.3",
+    "verror": "^1.10.0"
   },
   "devDependencies": {},
   "scripts": {
