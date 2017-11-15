@@ -1,7 +1,7 @@
 //Get Started with Microsoft Bot Framework in Node.js code at docs.botframework.com 
 //Add your requirements (as seen in package.json).
 //These dependencies are installed through Node.js command prompt with commands:
-//npm install --save tracery-grammar
+//npm install --save tracery-grammar 
 var restify = require('restify'); 
 var builder = require('botbuilder'); 
 var tracery = require('tracery-grammar');
